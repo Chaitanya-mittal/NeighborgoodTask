@@ -88,13 +88,13 @@
 }
 
 .noiseBg {
-    background-image: url("./public/noise.avif");
+    background-image: url("/noise.avif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .dnoiseBg {
-    background-image: url("./public/dnoise.avif");
+    background-image: url("/dnoise.avif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
