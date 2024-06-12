@@ -14,14 +14,14 @@ function GetStarted() {
       <div className="redditText mb-5 mt-8 flex flex-col gap-4 pb-5">
         <Link
           to="/login"
-          className="flex h-10 items-center justify-center gap-2 rounded-md border bg-blue-600  font-[300] text-white dark:border-0"
+          className="flex h-10 items-center justify-center gap-2 rounded-md border bg-blue-600  font-[300] text-white transition-all duration-100 hover:bg-blue-700 dark:border-0 "
         >
           <FaEnvelope />
           <span className="text-sm">Login</span>
         </Link>
         <Link
           to="/signup"
-          className="flex h-10 items-center justify-center gap-2 rounded-md border bg-green-600 font-[300]  text-white dark:border-0"
+          className="flex h-10 items-center justify-center gap-2 rounded-md border bg-green-600 font-[300]  text-white transition-all duration-100 hover:bg-green-700 dark:border-0 "
         >
           <FaEnvelope />
           <span className="text-sm">Sign Up</span>

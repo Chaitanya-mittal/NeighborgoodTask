@@ -2,7 +2,7 @@ function Error({ children, check }) {
   if (check) {
     return (
       <li
-        className={`text-xs  ${check === "on" ? "text-green-500" : "text-red-500 dark:text-orange-500"} mt-1 `}
+        className={`text-xs  ${check === "on" ? "text-green-500" : "text-red-500 dark:text-orange-400"} mt-1 `}
       >
         <span>
           {check === "on" ? "✅" : "❌"} {children}
@@ -11,7 +11,7 @@ function Error({ children, check }) {
     );
   }
   return (
-    <p className="mt-1 text-sm text-red-500 dark:text-orange-400">{children}</p>
+    <p className="mt-1 text-xs text-red-500 dark:text-orange-400">{children}</p>
   );
 }
 

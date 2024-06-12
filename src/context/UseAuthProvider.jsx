@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const authContext = createContext();
 function UseAuthProvider({ children }) {
@@ -20,6 +20,12 @@ function UseAuthProvider({ children }) {
       {children}
     </authContext.Provider>
   );
+}
+
+export function useAuthContext() {
+  const x = useContext(authContext);
+  if (x !== undefined) return x;
+  return new Error("Accessing context out of scope error");
 }
 
 export default UseAuthProvider;
